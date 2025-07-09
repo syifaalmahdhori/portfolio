@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--===== Favicon =====-->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <!--===== Font Awesome =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--===== Main CSS =====-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <!--===== Navbar Start =====-->
+      <nav class="navbar">
+          <div class="container">
+              <div class="row justify-content-between">
+                  <div class="logo"><a href="index.html">Port<span>folio</span></a></div>
+                  <div class="links">
+                  <ul class="menu">
+                      <li class="nav-item"><a href="#home" class="nav-link active">Beranda <span></span></a></li>
+                      <li class="nav-item"><a href="#about" class="nav-link">Tentang <span></span></a></li>
+                      <li class="nav-item"><a href="#services" class="nav-link">Keahlian <span></span></a></li>
+                      <!-- <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio <span></span></a></li> -->
+                      <li class="nav-item"><a href="#resume" class="nav-link">Resume <span></span></a></li>
+                      <!-- <li class="nav-item"><a href="#contact" class="nav-link">Kontak <span></span></a></li> -->
+                  </ul>
+                  </div>
+                  <div class="menu-btn">
+                      <i class="fas fa-bars"></i>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      <!--===== Navbar End =====-->
+      <!--===== Home Section Start =====-->
+      <section class="home-section" id="home">
+          <ul class="header-social"> <!--===== Header Social =====-->
+              <li><a href="https://www.facebook.com/dhori.dhori.16"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/namakudhori"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/syifa-almahdhori/"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="home-text">
+                      <h4>Halo, saya</h4>
+                      <h1>Syifa Almahdhori</h1>
+                      <span>IT Graduates | Network Engineer | Web Developer</span>
+                      <p>Saya menyukai tantangan dalam pengembangan web dan sistem jaringan. Lulusan IT yang terus belajar dan terbuka terhadap hal baru, dengan pengalaman freelance membuat website serta menangani pengaturan jaringan.</p>
+                           <a href="#services" class="btn btn-1">Lihat Kemampuan Saya</a>
+                  </div>
+                  <div class="home-image">
+                      <div class="img-box">
+                          <img src="images/hero.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="header-hero-shape"></div> <!--===== Hero Shape =====-->
+          <!--===== Contact Box Horizontal Bottom Left =====-->
+            <div class="contact-box-horizontal">
+                <div class="contact-item">
+                    <div class="contact-item-inner">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone</span>
+                        <p>+62 812-8092-9940</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-inner">
+                        <i class="fas fa-envelope"></i>
+                        <span>Gmail</span>
+                        <p>syifaalmahdhori@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-inner">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Alamat</span>
+                        <p>Perumahan Bekasi Griya Pratama, <br>
+                            Jl. Kamboja 1 No.blok No.17,<br>
+                            Tambun Selatan<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <!--===== Home Section End =====-->
+      <style>
+          /* Pastikan section home bisa jadi parent posisi */
+          .home-section {
+            position: relative;
+          }
+
+          /* Container posisi pojok kiri bawah */
+          .contact-box-horizontal {
+            position: absolute;
+            bottom: 110px;  /* Ubah bagian ini */
+            left: 50px;
+            display: flex;
+            gap: 20px;
+            z-index: 1;
+          }
+
+          /* Box masing-masing item */
+          .contact-box-horizontal .contact-item {
+            background-color: #f9fafb;
+            padding: 15px;
+            border-radius: 5px;
+            width: 240px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+          }
+
+          /* Isi di dalamnya */
+          .contact-item-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* untuk posisi horizontal */
+            text-align: center;  /* untuk posisi teks */
+          }
+
+          .contact-item-inner i {
+            color: #0b1b45;
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
+
+          .contact-item-inner span {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 3px;
+          }
+
+          .contact-item-inner p {
+            font-size: 13px;
+            color: #505b75;
+            margin: 0;
+            line-height: 1.3;
+          }
+
+          /* Responsive: tumpuk ke bawah saat layar kecil */
+          @media (max-width: 768px) {
+            .contact-box-horizontal {
+              display: none;
+            }
+          }
+          /* Responsive: sembunyikan saat layar tablet dan mobile */
+          @media (max-width: 1024px) {
+            .contact-box-horizontal {
+              display: none;
+            }
+          }
+          
+
+      </style>
+      <!--===== About Section Start =====-->
+      <section class="about-section section-padding dotted-decor" id="about">
+          <div class="container">
+              <div class="row align-items-center justify-content-center">
+                  <div class="about-image">
+                      <div class="img-box">
+                          <img src="images/about_hero.png" alt="">
+                          <div class="about-shape"></div>
+                      </div>
+                  </div>
+                  <div class="about-content">
+                      <div class="section-title">
+                          <h5 class="sub-title">Tentang</h5>
+                          <h3 class="main-title">Alasan Memilih Saya</h3>
+                          <ul class="line">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                          </ul>
+                      </div> <!--===== Section Title =====-->
+                      <p>Saya adalah fresh graduate Teknologi Informasi dari 
+                        Universitas Darma Persada, dengan pengalaman sebagai 
+                        IT Support, freelancer, dan keahlian dalam Web Development. 
+                        Saya mampu bekerja secara tim maupun individu, mudah beradaptasi, 
+                        berpikiran terbuka, serta selalu bersemangat untuk belajar dan 
+                        berkembang secara profesional.</p>
+                          <div class="about-skills">
+                              <div class="skill-item">
+                                  <div class="skill-header">
+                                      <h6 class="skill-title">UI/UX Design</h6>
+                                      <div class="skill-percentage">
+                                          <p><span class="counter">79</span>%</p>
+                                      </div>
+                                  </div>
+                                  <div class="skill-bar">
+                                      <div class="bar-inner">
+                                          <div class="bar progress-line" data-progress="79%"></div>
+                                      </div>
+                                  </div>
+                              </div> <!--===== Skill Item =====-->
+                              <div class="skill-item">
+                                <div class="skill-header">
+                                    <h6 class="skill-title">Web Design</h6>
+                                    <div class="skill-percentage">
+                                        <p><span class="counter">90</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-progress="90%"></div>
+                                    </div>
+                                </div>
+                            </div> <!--===== Skill Item =====-->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h6 class="skill-title">Communication</h6>
+                                    <div class="skill-percentage">
+                                        <p><span class="counter">80</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-progress="80%"></div>
+                                    </div>
+                                </div>
+                            </div> <!--===== Skill Item =====-->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h6 class="skill-title">Problem Solving</h6>
+                                    <div class="skill-percentage">
+                                        <p><span class="counter">95</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-progress="95%"></div>
+                                    </div>
+                                </div>
+                            </div> <!--===== Skill Item =====-->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h6 class="skill-title">Technical Sopport</h6>
+                                    <div class="skill-percentage">
+                                        <p><span class="counter">90</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-progress="90%"></div>
+                                    </div>
+                                </div>
+                            </div> <!--===== Skill Item =====-->
+                            <br>
+                            <style>
+                                .cv-modal {
+                                display: none;
+                                position: fixed;
+                                z-index: 1000;
+                                left: 0; top: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0,0,0,0.5);
+                                justify-content: center;
+                                align-items: center;
+                                }
+
+                                .cv-modal-content {
+                                background: #fff;
+                                padding: 30px 20px;
+                                border-radius: 10px;
+                                text-align: center;
+                                max-width: 300px;
+                                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+                                }
+
+                                .cv-modal-content h4 {
+                                margin-bottom: 20px;
+                                color: #0b1b45;
+                                }
+
+                                .cv-modal-content .btn {
+                                display: block;
+                                margin: 10px auto;
+                                width: 100%;
+                                }
+
+                                .cv-close {
+                                position: absolute;
+                                top: 15px;
+                                right: 25px;
+                                font-size: 24px;
+                                color: #fff;
+                                cursor: pointer;
+                                }
+
+                            </style>
+                            <!-- Tombol utama -->
+                            <button class="btn btn-1" id="cvButton">Download CV</button>
+
+                            <!-- Modal pilihan versi CV -->
+                            <div class="cv-modal" id="cvModal">
+                                <div class="cv-modal-content">
+                                    <span class="cv-close" id="cvClose">&times;</span>
+                                    <h4>Pilih Versi CV</h4>
+                                    <a href="https://drive.google.com/file/d/1Zb7yDXjtspznfq6UnRIJPD-DW0HGFMFt/view?usp=sharing" class="btn btn-1" target="_blank">Versi ATS</a>
+                                    <a href="https://drive.google.com/file/d/11U2vWVqsmYcaXNt0ClYTBc7w257AzVwI/view?usp=sharing" class="btn btn-1" target="_blank">Versi Kreatif</a>
+                                </div>
+                            </div>
+                            <script>
+                                const cvButton = document.getElementById("cvButton");
+                                const cvModal = document.getElementById("cvModal");
+                                const cvClose = document.getElementById("cvClose");
+
+                                cvButton.onclick = () => cvModal.style.display = "flex";
+                                cvClose.onclick = () => cvModal.style.display = "none";
+                                window.onclick = (e) => {
+                                    if (e.target === cvModal) {
+                                    cvModal.style.display = "none";
+                                    }
+                                };
+                            </script>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--===== About Section End =====-->
+      <!--===== Services Section Start =====-->
+      <section class="service-section section-padding " id="services">
+          <div class="container">
+              <div class="row">
+                <div class="section-title text-align">
+                    <h5 class="sub-title">Keahlian Saya</h5>
+                    <h3 class="main-title">Spesialisasi Saya</h3>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div> <!--===== Section Title =====-->
+              </div>
+              <div class="row">
+                   <!--===== Service Item Start =====-->
+                  <div class="service-item">
+                      <div class="service-item-inner">
+                          <div class="icon">
+                              <i class="fas fa-palette"></i>
+                          </div>
+                          <h3>UI/UX Design</h3>
+                          <p>Merancang antarmuka yang modern dan mudah digunakan dengan tools seperti Figma dan Canva, serta mengutamakan pengalaman pengguna yang mudah dan efisien.</p>
+                      </div>
+                  </div>
+                  <!--===== Service Item End =====-->
+                  <!--===== Service Item Start =====-->
+                   <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Membuat website responsif dan interaktif menggunakan HTML, CSS, JavaScript, dan PHP, serta menyesuaikan fungsionalitas sesuai kebutuhan pengguna.</p>
+                    </div>
+                </div>
+                <!--===== Service Item End =====-->
+                <!--===== Service Item Start =====-->
+                 <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>IT Support</h3>
+                        <p>Menyelesaikan masalah teknis harian seperti instalasi software, troubleshooting perangkat keras, serta memberikan dukungan jaringan dan panduan kepada pengguna.</p>
+                    </div>
+                </div>
+                <!--===== Service Item End =====-->
+                <!--===== Service Item Start =====-->
+                 <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Basic Networking</h3>
+                        <p>Melakukan konfigurasi jaringan dasar dan troubleshooting koneksi LAN/WiFi, termasuk setup IP address, router, serta pemecahan masalah konektivitas umum..</p>
+                    </div>
+                </div>
+                <!--===== Service Item End =====-->
+                <!--===== Service Item Start =====-->
+                 <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>System Maintenance</h3>
+                        <p>Menjaga kinerja sistem dan aplikasi tetap optimal melalui monitoring performa, update berkala, backup data, serta perbaikan dini terhadap error yang terdeteksi.</p>
+                    </div>
+                </div>
+                <!--===== Service Item End =====-->
+                <!--===== Service Item Start =====-->
+                 <div class="service-item">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>IoT Development</h3>
+                        <p>Membangun sistem berbasis ESP32/ESP8266 dan sensor untuk kontrol & monitoring perangkat secara real-time melalui web atau cloud.</p>
+                    </div>
+                </div>
+                <!--===== Service Item End =====-->
+              </div>
+          </div>
+      </section>
+      <!--===== Services Section End =====-->
+      <!--===== Resume Section Start =====-->
+      <section class="custom-resume-section section-padding dotted-decor" id="resume">
+
+        <div class="container">
+          <div class="row">
+            <div class="section-title text-align">
+              <h5 class="sub-title">Resume</h5>
+              <h3 class="main-title">Profil Saya</h3>
+              <ul class="line">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row resume-columns">
+        <!-- Kolom Pendidikan -->
+        <div class="resume-column">
+          <h3 class="resume-title">Pendidikan</h3>
+          <ul class="resume-list">
+            
+            <!-- Universitas Darma Persada -->
+            <li class="resume-item-box">
+              <div class="resume-header">
+                <span class="item-title">UNIVERSITAS DARMA PERSADA</span>
+                <button class="toggle-btn" onclick="toggleDetail(this)">+</button>
+              </div>
+              <div class="item-detail-box">
+                <div class="item-detail-content">
+                  <div class="detail-top">
+                    <strong>Teknologi Informasi</strong>
+                    <span class="year">2020 – 2024</span>
+                  </div>
+                  <p>GPA: 3.22</p>
+                  <p><strong>Skill yang Dipelajari:</strong></p>
+                  <ul class="study-points">
+                    <li><i class="fas fa-check-circle"></i> Pemrograman Web (HTML, CSS, JavaScript, PHP)</li>
+                    <li><i class="fas fa-check-circle"></i> Database MySQL & PostgreSQL</li>
+                    <li><i class="fas fa-check-circle"></i> Analisis & Perancangan Sistem Informasi</li>
+                    <li><i class="fas fa-check-circle"></i> Manajemen Proyek TI</li>
+                    <li><i class="fas fa-check-circle"></i> Jaringan Komputer</li>
+                    <li><i class="fas fa-check-circle"></i> Keamanan Informasi</li>
+                    <li><i class="fas fa-check-circle"></i> Internet of Things (IoT)</li>
+                    <li><i class="fas fa-check-circle"></i> Mobile App Development (Android)</li>
+                    <li><i class="fas fa-check-circle"></i> Machine Learning Dasar</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- SMK Telesandi Bekasi -->
+            <li class="resume-item-box">
+              <div class="resume-header">
+                <span class="item-title">SMK TELEKOMUNIKASI TELESANDI BEKASI</span>
+                <button class="toggle-btn" onclick="toggleDetail(this)">+</button>
+              </div>
+              <div class="item-detail-box">
+                <div class="item-detail-content">
+                  <div class="detail-top">
+                    <strong>Teknik Komputer Jaringan</strong>
+                    <span class="year">2017 – 2020</span>
+                  </div>
+                  <p><strong>Skill yang Dipelajari:</strong></p>
+                    <ul class="study-points">
+                      <li><i class="fas fa-check-circle"></i> Perakitan & Instalasi Komputer</li>
+                      <li><i class="fas fa-check-circle"></i> Konfigurasi Jaringan LAN & WAN</li>
+                      <li><i class="fas fa-check-circle"></i> Pemrograman Dasar (Pascal, C++)</li>
+                      <li><i class="fas fa-check-circle"></i> Administrasi Jaringan Mikrotik & Cisco</li>
+                      <li><i class="fas fa-check-circle"></i> Sistem Operasi Jaringan (Linux & Windows Server)</li>
+                      <li><i class="fas fa-check-circle"></i> Keamanan Jaringan</li>
+                      <li><i class="fas fa-check-circle"></i> Teknologi Nirkabel & Fiber Optik</li>
+                      <li><i class="fas fa-check-circle"></i> Simulasi Digital</li>
+                    </ul>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+            <!-- Kolom Pengalaman -->
+            <div class="resume-column">
+              <h3 class="resume-title">Pengalaman</h3>
+              <ul class="resume-list">
+                <li class="resume-item-box">
+                  <div class="resume-header">
+                    <span class="item-title">Freelance Web Developer & Designer</span>
+                    <button class="toggle-btn" onclick="toggleDetail(this)">+</button>
+                  </div>
+                  <div class="item-detail-box">
+                    <div class="item-detail-content">
+                      <div class="detail-top">
+                        <strong>DigiTugas</strong>
+                        <span class="year">Bekasi | Jan 2025 – Sekarang</span>
+                      </div>
+                      <a href="https://digitugas.github.io/portfolio/" target="_blank" class="digi-btn">website DigiTugas</a>
+                        <ul>
+                          <li><i class="fas fa-check-circle"></i> Menangani permintaan desain, laporan, dan tugas digital</li>
+                          <li><i class="fas fa-check-circle"></i> Mendesain poster & konten promosi sesuai identitas klien</li>
+                          <li><i class="fas fa-check-circle"></i> Menyusun & memperbaiki laporan agar tampil profesional</li>
+                          <li><i class="fas fa-check-circle"></i> Membangun website responsif (HTML, CSS, JS, PHP)</li>
+                          <li><i class="fas fa-check-circle"></i> Menyusun layout web yang user-friendly</li>
+                          <li><i class="fas fa-check-circle"></i> Komunikasi & revisi bersama klien hingga hasil memuaskan</li>
+                        </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="resume-item-box">
+                  <div class="resume-header">
+                    <span class="item-title">Junior Application Developer</span>
+                    <button class="toggle-btn" onclick="toggleDetail(this)">+</button>
+                  </div>
+                  <div class="item-detail-box">
+                    <div class="item-detail-content">
+                      <div class="detail-top">
+                        <strong>ATR BPN Kuningan</strong>
+                        <span class="year">Jakarta | Januari – Juni 2023</span>
+                      </div>
+                      <p><em>Internship</em></p>
+                        <ul>
+                          <li><i class="fas fa-check-circle"></i> Merancang UI/UX aplikasi sesuai kebutuhan pengguna</li>
+                          <li><i class="fas fa-check-circle"></i> Mengembangkan fitur aplikasi dengan logika dasar</li>
+                          <li><i class="fas fa-check-circle"></i> Menguji fungsi aplikasi & memperbaiki bug</li>
+                          <li><i class="fas fa-check-circle"></i> Memelihara performa aplikasi secara rutin</li>
+                          <li><i class="fas fa-check-circle"></i> Kolaborasi tim pengembang & dokumentasi teknis</li>
+                          <li><i class="fas fa-check-circle"></i> Mendukung proses validasi dan input data aplikasi</li>
+                        </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="resume-item-box">
+                  <div class="resume-header">
+                    <span class="item-title">IT Support</span>
+                    <button class="toggle-btn" onclick="toggleDetail(this)">+</button>
+                  </div>
+                  <div class="item-detail-box">
+                    <div class="item-detail-content">
+                      <div class="detail-top">
+                        <strong>PT. Karya Intertek Kencana</strong>
+                        <span class="year">Jakarta | Mei – Oktober 2018</span>
+                      </div>
+                      <p><em>Internship</em></p>
+                        <ul>
+                          <li><i class="fas fa-check-circle"></i> Troubleshooting perangkat keras & jaringan lokal</li>
+                          <li><i class="fas fa-check-circle"></i> Instalasi & konfigurasi hardware, printer & software</li>
+                          <li><i class="fas fa-check-circle"></i> Dukungan teknis kepada pengguna internal</li>
+                          <li><i class="fas fa-check-circle"></i> Perawatan komputer & sistem pendukung secara berkala</li>
+                          <li><i class="fas fa-check-circle"></i> Laporan teknis & dokumentasi aktivitas IT</li>
+                          <li><i class="fas fa-check-circle"></i> Kolaborasi dengan tim untuk stabilitas sistem</li>
+                        </ul>
+
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+        <script>
+        function toggleDetail(button) {
+          const detailBox = button.parentElement.nextElementSibling;
+
+          // Toggle class aktif
+          detailBox.classList.toggle("active");
+
+          // Toggle ikon dan efek tombol
+          button.classList.toggle("opened");
+        } 
+        </script>
+
+      <style>
+        
+        #resume {
+        background-color: #fff;
+      }
+
+        .section-title .main-title {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      /* === Columns === */
+      .resume-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+      }
+
+      .resume-column {
+        flex: 1;
+        min-width: 280px;
+        max-width: 500px;
+      }
+
+      .resume-title {
+        padding: 50px;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 25px;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        padding-bottom: 10px;
+      }
+
+      /* === Resume List Items === */
+      .resume-list {
+        border-left: none;
+      }
+
+      .resume-item-box {
+        position: relative;
+        margin-bottom: 10px;
+        background-color:0 5px 15px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+
+      .resume-item-box:hover {
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      }
+
+      /* === Header Bar === */
+      .resume-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px;
+        background-color: #f0f4ff;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .toggle-btn {
+        background-color: #fff;
+        border: 2px solid #000000;
+        color: #000000;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 22px;
+        transition: 0.3s;
+      }
+
+      .toggle-btn:hover {
+        background-color: #bfbfbf;
+        color: #fff;
+      }
+
+      /* === Detail Content === */
+      .study-points li {
+        margin-bottom: 6px;
+        font-size: 16px; /* Tambahkan font-size */
+      }
+
+      .study-points li i {
+        color: #0b1b45;
+        margin-right: 8px;
+      }
+
+      .resume-item-box ul li {
+        margin-bottom: 6px;
+        line-height: 1.5;
+        font-size: 16px; /* Tambahkan font-size */
+      }
+
+      .resume-item-box ul li i {
+        color: #0b1b45;  /* Sesuaikan dengan tema warna kamu */
+        margin-right: 8px;
+      }
+
+      .digi-btn {
+        display: inline-block;
+        padding: 6px 14px;
+        background-color: #e2e9ff;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .digi-btn:hover {
+        background-color: #1a2970;
+        color: #ffffff;
+      }
+
+      /* Animasi buka/tutup */
+      .item-detail-box {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, padding 0.5s ease;
+        padding: 0 20px;
+        background-color: #f9f9f9;
+        border-top: 1px solid #ddd;
+        font-size: 14px;
+        color: #333;
+      }
+
+      /* Saat terbuka */
+      .item-detail-box.active {
+        max-height: 1000px; /* besar cukup untuk semua isi */
+        padding: 16px 20px;
+      }
+
+      /* Ubah simbol toggle */
+      .toggle-btn.opened {
+        transform: rotate(45deg);
+        background-color: #000;
+        color: #fff;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      .item-detail-content .detail-top {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .item-detail-content p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .item-detail-content ul {
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+      .item-detail-content ul li {
+        margin-bottom: 6px;
+      }
+
+      /* === Timeline Dot (Optional aesthetic) === */
+      .resume-list li::before {
+        left: 8px;
+      }
+
+      /* === Responsive === */
+      @media (max-width: 768px) {
+        .resume-columns {
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .resume-column {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .resume-title {
+          text-align: center; /* tetap di tengah */
+        }
+      }
+
+
+      /* === Dekorasi Pola Titik di Resume Section === */
+      .dotted-decor {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .dotted-decor::before,
+      .dotted-decor::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-image: radial-gradient(#000000 3px, transparent 1.5px);
+        background-size: 20px 20px;
+        opacity: 0.08;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* Kanan atas */
+      .dotted-decor::before {
+        top: 0;
+        right: 0;
+      }
+
+      /* Kiri bawah */
+      .dotted-decor::after {
+        bottom: 0;
+        left: 0;
+      }
+
+      /* Supaya konten tetap di atas titik */
+      .dotted-decor > * {
+        position: relative;
+        z-index: 2;
+      }
+      @media (max-width: 768px) {
+      .dotted-decor::before,
+      .dotted-decor::after {
+        width: 120px;
+        height: 120px;
+        background-image: radial-gradient(#000000 2px, transparent 1px);
+        background-size: 15px 15px;
+        opacity: 0.06;
+      }
+
+      .dotted-decor::before {
+        top: 10px;
+        right: 10px;
+      }
+
+      .dotted-decor::after {
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .dotted-decor::before,
+      .dotted-decor::after {
+        width: 90px;
+        height: 90px;
+        background-image: radial-gradient(#000000 1.5px, transparent 1px);
+        background-size: 12px 12px;
+        opacity: 0.05;
+      }
+    }
+
+      </style>
+      <!--===== Resume Section End =====-->
+       <!--===== Footer Section Start =====-->
+       <footer class="footer">
+           <div class="container">
+               <div class="row justify-content-center">
+                   <!-- <p class="copyright-text">&copy; 2021 by cryptical coder</p> -->
+                   <p class="">&copy;</p>
+               </div>
+           </div>
+       </footer>
+       <!--===== Footer Section End =====-->
+       <!--===== Lightbox Start =====-->
+      <div class="lightbox">
+          <div class="lightbox-content">
+              <div class="lightbox-close">&times;</div>
+              <img src="images/portfolio/portfolio-2.jpg" onclick="nextItem()" class="lightbox-img" alt="">
+              <div class="lightbox-caption">
+                  <div class="caption-text"></div>
+                  <div class="caption-counter"></div>
+              </div>
+          </div>
+          <div class="lightbox-controls">
+              <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+              <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+          </div>
+      </div>
+      <!--===== Lightbox End =====-->
+      <!--===== Main JS =====-->
+    <script src="js/main.js"></script>
+</body>
+</html>
