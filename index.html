@@ -894,122 +894,370 @@
     </div>
 
       <!-- Konten -->
-      <div class="row portfolio-content">
-        
-        <!-- Iframe di kiri -->
-        <div class="iframe-wrapper animate-on-scroll">
-          <iframe 
-            src="https://digitugas.github.io/portfolio/">
-          </iframe>
-        </div>
+<div class="row portfolio-content">
+  <!-- Iframe di kiri -->
+  <div class="iframe-wrapper animate-on-scroll">
+    <iframe src="https://digitugas.github.io/portfolio/"></iframe>
+  </div>
 
-        <!-- Deskripsi di kanan -->
-        <div class="project-description">
-          <div class="section-title">
-            <h5 class="main-title">Deskripsi</h5>
-            <ul class="line">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <p>
-              DigiTugas merupakan sebuah platform layanan digital yang saya bangun untuk membantu mahasiswa, pelajar, maupun profesional dalam menyelesaikan berbagai kebutuhan tugas dan proyek. 
-              <br>
-              Melalui website ini, pengguna dapat melihat portofolio layanan yang mencakup pembuatan website, pengembangan aplikasi Android, editing video, graphic design, document design, hingga pendampingan akademik seperti pembuatan laporan dan skripsi. 
-              <br>
-              Website DigiTugas dirancang dengan tampilan sederhana namun informatif, memuat contoh-contoh hasil kerja serta informasi layanan yang tersedia. Dengan adanya platform ini, saya ingin menghadirkan solusi praktis, cepat, dan profesional bagi siapa saja yang membutuhkan bantuan dalam bidang teknologi maupun kreativitas.
-            </p>
-        </div>
+  <!-- Deskripsi di kanan -->
+  <div class="project-description">
+    <div class="section-title">
+      <h5 class="main-title">Deskripsi</h5>
+      <ul class="line">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="description">
+        <p class="description-short">
+          DigiTugas merupakan platform layanan digital yang saya bangun untuk membantu mahasiswa, pelajar, maupun profesional dalam menyelesaikan berbagai kebutuhan tugas dan proyek.
+        </p>
+
+        <p class="description-full" style="display:none;">
+          Melalui website ini, pengguna dapat melihat portofolio layanan yang mencakup pembuatan website, pengembangan aplikasi Android, editing video, graphic design, document design, hingga pendampingan akademik seperti pembuatan laporan dan skripsi.
+          <br><br>
+          Website DigiTugas dirancang dengan tampilan sederhana namun informatif, memuat contoh-contoh hasil kerja serta informasi layanan yang tersedia. Dengan adanya platform ini, saya ingin menghadirkan solusi praktis, cepat, dan profesional bagi siapa saja yang membutuhkan bantuan dalam bidang teknologi maupun kreativitas.
+        </p>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div class="action-buttons">
+        <a href="#" class="read-more-btn" onclick="toggleDescription(event)">
+          Baca Selengkapnya <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="https://digitugas.github.io/portfolio/" target="_blank" class="review-btn">
+          <i class="fas fa-external-link-alt"></i> Review Website
+        </a>
       </div>
     </div>
+  </div>
+</div>
+
+<script>
+  function toggleDescription(event) {
+    event.preventDefault();
+    const button = event.target.closest('.read-more-btn');
+    const descriptionWrapper = button.parentElement.querySelector('.description');
+    const descriptionFull = descriptionWrapper.querySelector('.description-full');
+
+    if (descriptionFull.style.display === 'none' || descriptionFull.style.display === '') {
+      descriptionFull.style.display = 'block';
+      button.innerHTML = 'Tutup <i class="fas fa-chevron-up"></i>';
+    } else {
+      descriptionFull.style.display = 'none';
+      button.innerHTML = 'Baca Selengkapnya <i class="fas fa-chevron-down"></i>';
+    }
+  }
+</script>
+
+<style>
+ .portfolio-section .project-description .description-full { display: none; }
+
+  .action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .read-more-btn, .review-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .read-more-btn {
+    color: #007bff;
+  }
+  .read-more-btn:hover { color: #0056b3; }
+
+  .review-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  .review-btn:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+  }
+
+  .read-more-btn i,
+  .review-btn i {
+    font-size: 11px;
+  }
+</style>
+
     
-    <!-- Konten -->
-    <div class="row portfolio-content">
-      
-      <!-- Iframe di kiri -->
-      <div class="iframe-wrapper animate-on-scroll">
-        <iframe 
-          src="https://syifaalmahdhori.github.io/IOT_SEKOLAH/index.html">
-        </iframe>
+<!-- Konten -->
+<div class="row portfolio-content">
+  <!-- Iframe di kiri -->
+  <div class="iframe-wrapper animate-on-scroll">
+    <iframe src="https://syifaalmahdhori.github.io/IOT_SEKOLAH/index.html"></iframe>
+  </div>
+
+  <!-- Deskripsi di kanan -->
+  <div class="project-description">
+    <div class="section-title">
+      <h5 class="main-title">Deskripsi</h5>
+      <ul class="line">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="description">
+        <p class="description-short">
+          Proyek monitoring <strong>Internet of Things (IoT)</strong> untuk memantau kondisi lingkungan sekolah secara real-time dengan tampilan data yang ringkas dan mudah dipahami.
+        </p>
+
+        <p class="description-full" style="display:none;">
+          Sistem ini menggunakan <strong>mikrokontroler ESP32</strong> dan sejumlah sensor (suhu, kelembaban, intensitas cahaya, dan gas). Data dikirim ke server lalu divisualisasikan dengan <strong>Chart.js</strong> dalam bentuk grafik serta tabel interaktif, sehingga memudahkan analisis tren harian.<br><br>
+          Tujuan utama proyek ini adalah untuk meningkatkan <strong>keamanan dan kenyamanan</strong> lingkungan belajar melalui pemantauan otomatis, alarm dini saat nilai sensor melewati ambang batas, serta laporan yang dapat ditindaklanjuti oleh pihak sekolah.
+        </p>
       </div>
 
-      <!-- Deskripsi di kanan -->
-      <div class="project-description">
-        <div class="section-title">
-          <h5 class="main-title">Deskripsi</h5>
-          <ul class="line">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        <p>
-          Berikut adalah hasil dari proyek monitoring berbasis Internet of Things (IoT) yang dirancang untuk mengamati kondisi lingkungan sekolah secara real-time.
-          <br>
-          Proyek ini merupakan sistem monitoring IoT yang menampilkan data sensor lingkungan sekolah secara real-time. Menggunakan mikrokontroler ESP32 dan berbagai sensor, data dikirim ke server dan divisualisasikan menggunakan Chart.js dalam grafik dan tabel interaktif.
-          <br>
-          Parameter yang dipantau meliputi suhu, kelembaban, intensitas cahaya, dan keberadaan gas. Tujuan proyek ini adalah untuk meningkatkan keamanan dan kenyamanan lingkungan belajar melalui pemantauan otomatis dan terintegrasi.
-        </p>
+      <!-- Tombol aksi -->
+      <div class="action-buttons">
+        <a href="#" class="read-more-btn" onclick="toggleDescription(event)">
+          Baca Selengkapnya <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="https://syifaalmahdhori.github.io/IOT_SEKOLAH/index.html" target="_blank" class="review-btn">
+          <i class="fas fa-external-link-alt"></i> Review Website
+        </a>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Konten -->
-    <div class="row portfolio-content">
-      
-      <!-- Iframe di kiri -->
-      <div class="iframe-wrapper animate-on-scroll">
-        <iframe 
-          src="https://syifaalmahdhori.github.io/mahanaim_school/">
-        </iframe>
+<!-- Konten -->
+<div class="row portfolio-content">
+  <!-- Iframe di kiri -->
+  <div class="iframe-wrapper animate-on-scroll">
+    <iframe src="https://syifaalmahdhori.github.io/mahanaim_school/"></iframe>
+  </div>
+
+  <!-- Deskripsi di kanan -->
+  <div class="project-description">
+    <div class="section-title">
+      <h5 class="main-title">Deskripsi</h5>
+      <ul class="line">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="description">
+        <p class="description-short">
+          Saya mengembangkan sebuah website untuk <strong>Mahanaim School</strong> dengan tujuan meningkatkan interaksi antara sekolah, siswa, orang tua, dan staf. Website ini dirancang dengan tampilan yang responsif dan user-friendly agar mudah diakses melalui berbagai perangkat.
+        </p>
+
+        <p class="description-full" style="display:none;">
+          Dengan menggunakan teknologi web modern dan desain yang sederhana namun elegan, proyek ini tidak hanya meningkatkan pengalaman pengguna, tetapi juga memperkuat komunikasi antara pihak sekolah dan keluarga, mempermudah akses informasi penting, serta memberikan solusi digital untuk kebutuhan sekolah.
+          <br><br>
+          Website ini membantu sekolah dalam menampilkan profil, kegiatan, dan informasi penting secara online — menciptakan pengalaman yang lebih interaktif dan profesional bagi seluruh pihak yang terlibat.
+        </p>
       </div>
 
-      <!-- Deskripsi di kanan -->
-      <div class="project-description">
-        <div class="section-title">
-          <h5 class="main-title">Deskripsi</h5>
-          <ul class="line">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        <p>
-          Sebagai bagian dari proyek ini, saya mengembangkan sebuah website untuk Mahanaim School dengan tujuan untuk meningkatkan interaksi antara sekolah, siswa, orang tua, dan staf. Website ini dirancang dengan tampilan yang responsif dan user-friendly, memastikan bahwa pengguna dapat mengakses informasi dengan mudah melalui berbagai perangkat.
-          <br>
-          Dengan menggunakan teknologi web modern dan desain yang sederhana namun elegan, proyek ini tidak hanya meningkatkan pengalaman pengguna, tetapi juga memperkuat komunikasi antara pihak sekolah dan keluarga, mempermudah akses informasi penting, dan memberikan solusi digital untuk kebutuhan sekolah.
-        </p>
+      <!-- Tombol Aksi -->
+      <div class="action-buttons">
+        <a href="#" class="read-more-btn" onclick="toggleDescription(event)">
+          Baca Selengkapnya <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="https://syifaalmahdhori.github.io/mahanaim_school/" target="_blank" class="review-btn">
+          <i class="fas fa-external-link-alt"></i> Review Website
+        </a>
       </div>
     </div>
   </div>
+</div>
 
-    <!-- Konten -->
-    <div class="row portfolio-content">
-      
-      <!-- Iframe di kiri -->
-      <div class="iframe-wrapper animate-on-scroll">
-        <iframe 
-          src="https://syifaalmahdhori.github.io/pembelajaran_interaktif/">
-        </iframe>
+
+<div class="row portfolio-content">
+  <!-- Iframe di kiri -->
+  <div class="iframe-wrapper animate-on-scroll">
+    <iframe src="https://syifaalmahdhori.github.io/Web_Monitoring_Kualitas_Air/"></iframe>
+  </div>
+
+  <!-- Deskripsi di kanan -->
+  <div class="project-description">
+    <div class="section-title">
+      <h5 class="main-title">Deskripsi</h5>
+      <ul class="line">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="description">
+        <p class="description-short">
+          Saya membuat website <strong>Monitoring Kualitas Air</strong> berbasis <strong>Fuzzy Logic Sugeno</strong> untuk memantau parameter pH, suhu, kekeruhan, dan TDS secara real-time melalui dashboard web yang ringkas dan informatif.
+        </p>
+
+        <p class="description-full" style="display:none;">
+          Sistem menggunakan <strong>ESP32</strong> yang membaca sensor pH, suhu, kekeruhan, dan <em>Total Dissolved Solid</em> (TDS). Data dikirim ke server dan divisualisasikan pada <strong>dashboard interaktif</strong> (grafik Chart.js & indikator warna).<br>
+          Metode <strong>Fuzzy Sugeno</strong> menggabungkan keempat parameter untuk mengklasifikasi kualitas air menjadi <em>Baik</em>, <em>Cukup</em>, atau <em>Buruk</em>. Pendekatan fuzzy lebih adaptif terhadap fluktuasi data dibanding threshold statis, sehingga keputusan lebih stabil dan akurat.<br>
+          Fitur tambahan meliputi alarm saat nilai melewati ambang aman, ringkasan tren, dan rekomendasi tindakan, sehingga memudahkan pemantauan dan pengelolaan kualitas air secara proaktif.
+        </p>
       </div>
 
-      <!-- Deskripsi di kanan -->
-      <div class="project-description">
-        <div class="section-title">
-          <h5 class="main-title">Deskripsi</h5>
-          <ul class="line">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <p>
-            Website Pembelajaran Interaktif Matematika ini dirancang sebagai media belajar digital yang membantu siswa memahami materi dengan cara yang lebih menarik dan menyenangkan. 
-            <br>
-            Di dalamnya terdapat materi dan latihan soal yang dikemas secara interaktif, sehingga pengguna dapat langsung mencoba menjawab pertanyaan dan melihat hasilnya secara real-time. 
-            <br>
-            Tujuan utama dari website ini adalah untuk mempermudah proses belajar matematika, meningkatkan pemahaman konsep, serta membuat siswa lebih aktif dalam berlatih. Dengan tampilan sederhana dan mudah digunakan, platform ini cocok untuk pelajar yang ingin belajar mandiri maupun sebagai pendamping dalam kegiatan belajar di sekolah.
-          </p>
+      <!-- Tombol Aksi -->
+      <div class="action-buttons">
+        <a href="#" class="read-more-btn" onclick="toggleDescription(event)">
+          Baca Selengkapnya <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="https://syifaalmahdhori.github.io/Web_Monitoring_Kualitas_Air/" target="_blank" class="review-btn">
+          <i class="fas fa-external-link-alt"></i> Review Website
+        </a>
       </div>
     </div>
-  </div>  
+  </div>
+</div>
+
+<div class="row portfolio-content">
+  <!-- Iframe di kiri -->
+  <div class="iframe-wrapper animate-on-scroll">
+    <iframe src="https://syifaalmahdhori.github.io/Web-Helpdesk-Community/"></iframe>
+  </div>
+
+  <!-- Deskripsi di kanan -->
+  <div class="project-description">
+    <div class="section-title">
+      <h5 class="main-title">Deskripsi</h5>
+      <ul class="line">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="description">
+        <p class="description-short">
+          Saya mengembangkan sebuah sistem helpdesk digital yang dirancang untuk mempermudah manajemen 
+          dan penyelesaian masalah teknis dalam lingkungan kerja. Sistem ini terintegrasi dengan sistem 
+          pelacakan tiket untuk memungkinkan pengguna melaporkan masalah, mengikuti status, dan menerima 
+          bantuan teknis secara efisien.
+        </p>
+
+        <p class="description-full" style="display: none;">
+          Dengan fokus pada desain responsif dan antarmuka yang ramah pengguna, sistem ini menyediakan 
+          pengalaman yang intuitif bagi pengguna akhir. Fitur-fitur seperti manajemen prioritas, pelacakan 
+          riwayat tiket, dan notifikasi real-time memastikan bahwa tim dukungan teknis dapat memberikan layanan 
+          yang cepat dan efektif kepada pengguna.  
+          <br><br>
+          Proyek ini juga mengimplementasikan tampilan dashboard interaktif untuk memantau statistik tiket, 
+          menampilkan status penyelesaian, dan mempermudah kolaborasi antaranggota tim. Sistem ini membantu 
+          meningkatkan efisiensi dalam menangani masalah TI dan memastikan kepuasan pengguna melalui tindak lanjut yang cepat.
+        </p>
+      </div>
+
+      <!-- Tombol aksi -->
+      <div class="action-buttons">
+        <a href="#" class="read-more-btn" onclick="toggleDescription(event)">
+          Baca Selengkapnya <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="https://syifaalmahdhori.github.io/Web-Helpdesk-Community/" target="_blank" class="review-btn">
+          <i class="fas fa-external-link-alt"></i> Review Website
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row portfolio-content">
+  <!-- Iframe di kiri -->
+  <div class="iframe-wrapper animate-on-scroll">
+    <iframe src="https://syifaalmahdhori.github.io/WEB_TPMS/"></iframe>
+  </div>
+
+  <!-- Deskripsi di kanan -->
+  <div class="project-description">
+    <div class="section-title">
+      <h5 class="main-title">Deskripsi</h5>
+      <ul class="line">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="description">
+        <p class="description-short">
+          Saya membangun sistem <em>Tire Pressure Monitoring System</em> (TPMS) berbasis <strong>Fuzzy Logic Sugeno</strong>
+          untuk memantau tekanan dan suhu ban secara real-time serta memberi peringatan dini saat kondisi tidak normal.
+        </p>
+
+        <p class="description-full" style="display:none;">
+          Sistem menggunakan sensor tekanan & suhu yang terhubung ke <strong>ESP32</strong>. Data dikirim ke server dan
+          ditampilkan pada <strong>dashboard web</strong> dengan grafik interaktif (Chart.js).<br>
+          Metode <strong>Fuzzy Logic Sugeno</strong> mempertimbangkan dua parameter utama—<em>tekanan</em> dan <em>suhu</em>—
+          untuk mengklasifikasi status ban: <em>normal</em>, <em>perlu perhatian</em>, atau <em>berbahaya</em>. Pendekatan fuzzy
+          lebih adaptif dibanding threshold statis, sehingga peringatan lebih akurat dan relevan.<br>
+          Hasilnya, pengemudi dapat memantau tren, menerima alarm ketika nilai melewati ambang aman, dan menjaga
+          <strong>keamanan serta efisiensi</strong> kendaraan melalui pemeliharaan ban yang lebih proaktif.
+        </p>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div class="action-buttons">
+        <a href="#" class="read-more-btn" onclick="toggleDescription(event)">
+          Baca Selengkapnya <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="https://syifaalmahdhori.github.io/WEB_TPMS/" target="_blank" class="review-btn">
+          <i class="fas fa-external-link-alt"></i> Review Website
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Konten -->
+<div class="row portfolio-content">
+  <!-- Iframe di kiri -->
+  <div class="iframe-wrapper animate-on-scroll">
+    <iframe src="https://syifaalmahdhori.github.io/pembelajaran_interaktif/"></iframe>
+  </div>
+
+  <!-- Deskripsi di kanan -->
+  <div class="project-description">
+    <div class="section-title">
+      <h5 class="main-title">Deskripsi</h5>
+      <ul class="line">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="description">
+        <p class="description-short">
+          Website Pembelajaran Interaktif Matematika ini dirancang sebagai media belajar digital yang membantu siswa memahami materi dengan cara yang lebih menarik dan menyenangkan.
+        </p>
+
+        <p class="description-full" style="display:none;">
+          Di dalamnya terdapat materi dan latihan soal yang dikemas secara interaktif, sehingga pengguna dapat langsung mencoba menjawab pertanyaan dan melihat hasilnya secara real-time.
+          <br><br>
+          Tujuan utama dari website ini adalah untuk mempermudah proses belajar matematika, meningkatkan pemahaman konsep, serta membuat siswa lebih aktif dalam berlatih.
+          Dengan tampilan sederhana dan mudah digunakan, platform ini cocok untuk pelajar yang ingin belajar mandiri maupun sebagai pendamping dalam kegiatan belajar di sekolah.
+        </p>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div class="action-buttons">
+        <a href="#" class="read-more-btn" onclick="toggleDescription(event)">
+          Baca Selengkapnya <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="https://syifaalmahdhori.github.io/pembelajaran_interaktif/" target="_blank" class="review-btn">
+          <i class="fas fa-external-link-alt"></i> Review Website
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
 <style>
@@ -1084,6 +1332,15 @@
   .portfolio-section .iframe-wrapper iframe {
     transform: scale(0.28);
   }
+  .portfolio-section .iframe-wrapper {
+    height: 250px; /* Mengatur tinggi iframe agar sesuai dengan konten */
+    transform: scale(0.5); /* Efek zoom out dengan skala 0.8 */
+    transform-origin: top left; /* Menetapkan titik asal transformasi */
+  }  
+  .portfolio-section .portfolio-content {
+    gap: 15px; /* Mengurangi jarak antara elemen-elemen di dalam portfolio */
+    padding: 0 10px; /* Menyesuaikan padding kiri dan kanan */
+  }
     .portfolio-section .project-description {
     max-width: 100%;
     padding: 0 15px; /* jarak kiri-kanan biar ga mepet */
@@ -1149,5 +1406,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
-
