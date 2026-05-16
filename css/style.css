@@ -371,7 +371,7 @@ img
 }
 .about-section .about-image .img-box img
 {
-    margin-top: -100px; /* untuk naikkan gambar */
+    margin-top: 0px; /* untuk naikkan gambar */
     max-width: 100%;
     width: 100%;
     z-index: 8;
